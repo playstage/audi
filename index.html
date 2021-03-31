@@ -416,13 +416,13 @@
         Kakao.init('1affa7cd8e3a9c1df875d2524f21f0e3');
 
         function chatChannel() {
-            if (!document.URL.includes("localhost")) {
-                gtag('event', '악플상담버튼클릭', {
-                    'event_category': document.referrer,
-                    'event_label': document.referrer,
-                    'previous_page': document.referrer
-                }) // send events
-            }
+            // if (!document.URL.includes("localhost")) {
+            //     gtag('event', '악플상담버튼클릭', {
+            //         'event_category': document.referrer,
+            //         'event_label': document.referrer,
+            //         'previous_page': document.referrer
+            //     }) // send events
+            // }
             Kakao.Channel.chat({
                 channelPublicId: '_BQbgK',
             })
